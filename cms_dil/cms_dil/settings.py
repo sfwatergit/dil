@@ -9,9 +9,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 gettext = lambda s: s
 PROJECT_PATH = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
 
-DEBUG = True
 
-TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -122,7 +120,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'cms_dil.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'cms_dil.wsgi.application'
+#WSGI_APPLICATION = 'cms_dil.wsgi.application'
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),

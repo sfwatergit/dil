@@ -70,8 +70,7 @@ MEDIA_URL = "/media/"
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-import posixpath
-ADMIN_MEDIA_PREFIX = posixpath.join(STATIC_URL, "admin/")
+
 
 
 # List of finder classes that know how to find static files in

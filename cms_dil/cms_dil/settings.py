@@ -159,6 +159,7 @@ INSTALLED_APPS = (
     'cms.plugins.teaser',
     'cms.plugins.twitter',
     'cms.plugins.video',
+    'gunicorn',
 
     'filer',
     'cmsplugin_filer_file',

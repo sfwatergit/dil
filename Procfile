@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath cms_dil cms_dil.wsgi
+web: gunicorn --pythonpath cms_dil cms_dil.wsgi -b 0.0.0.0:$PORT

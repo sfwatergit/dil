@@ -1,0 +1,72 @@
+{% load cms_tags sekizai_tags %}
+{% load menu_tags %}
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% block title %}
+
+    {% endblock title %}</title>
+
+    {% block base_head %}
+    {% endblock base_head %}
+    {% render_block "css" %}
+    {% block css %}
+        <!-- Bootstrap core CSS -->
+        <link href="{{ STATIC_URL }}css/vendor/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Quicksand|Open+Sans' rel='stylesheet' type='text/css'>
+
+
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/styles.css"/>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/vendor/menu.css"/>
+    {% endblock css %}
+    {% block js %}
+        <!-- JavaScript -->
+        <script src="{{ STATIC_URL }}js/vendor/jquery-1.10.2.js"></script>
+        <script src="{{ STATIC_URL }}js/vendor/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/vendor/slabtext-min.js"></script>
+    {% endblock js %}
+    <style>
+        body {
+background-image: url({{ STATIC_URL }}images/diagmonds.png);
+
+}
+    </style>
+</head>
+<body>
+{% cms_toolbar %}
+{% block nav %}
+
+
+{% endblock nav %}
+
+{% block base_content %}
+
+{% endblock base_content %}
+<!-- FOOTER -->
+<footer>
+    <p class="pull-right">
+        <a href="#">Back to top</a>
+    </p>
+
+    <p>
+       Designed by
+        <a href="http://dil.berkeley.edu/students/dil-idea-team/">The DIL Idea Team.</a>
+    </p>
+
+
+</footer>
+    {% block footer %}
+
+{% endblock footer %}
+{% block footer_codes %}
+
+{% endblock footer_codes %}
+
+<!-- /container -->
+
+{% render_block "js" %}
+</body>
+</html>

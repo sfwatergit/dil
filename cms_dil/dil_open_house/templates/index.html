@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block title %}
+    DIL Open House
+{% endblock %}
+
+
+{% block base_content %}
+    <!-- Nav -->
+    <section id="navBox" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <div id="navToggle"><span class="glyphicon glyphicon-plus"></span>
+
+            <div class="fa fa-th-large">
+
+            </div>
+        </div>
+
+        <nav id="toggle">
+            <ul class="nav">
+                <a href="#Top">
+                    <li><a href="">home</a></li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+
+    </section>
+    <!-- Carousel-->
+    <section class="top_img">
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+
+            <div class="carousel-inner">
+
+                <div id="#top" class="item active">
+                    <div class="full-image">
+                        {% placeholder image_1 %}
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 carousel-caption">
+
+                        <div class="row">
+                            <a id="col-xs-12 dil-logo-link" href="http://dil.berkeley.edu"><img
+                                    src="{{ STATIC_URL }}images/logo.png"
+                                    alt="Logo"/></a>
+                        </div>
+                        <div class="row">
+                        <span class="col-xs-12 slabtext">
+                            <h1 class="title">Open House <br/>
+                                &amp; <br/> One Year Anniversary</h1>     <br/>
+                        </span>
+                        </div>
+                        <div class="col-xs-12 carousel-subtitle text-center ">
+                    <span class="slabtext"><p>February 6<sup>th</sup> <span class="divider">|</span>
+                        4&ndash;6 pm <br/> Blum Hall Plaza Level</p></span>
+                            <a id="action-btn" class="col-sm-6 col-sm-offset-3 btn btn-danger"
+                               href="https://www.eventbrite.com/e/dil-open-house-1-year-anniversary-celebration-tickets-9678778487">RSVP
+                                Now!</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.carousel -->
+
+    <!-- Central Markup -->
+    <section class="center-divider">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+
+    </section>
+    <!-- /. Central Markup -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div id="#about" class="container marketing">
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image img-responsive img-thumbnail pull-right"
+             src="{{ STATIC_URL }}images/location.jpg">
+
+        <h2 class="featurette-heading">Celebrate
+            <br/>
+            <span class="text-secondary">The Anniversary of DIL</span></h2>
+
+        <p class="lead"><br/>In celebration of our 1-year anniversary, please join us for a Development Impact Lab
+            Open
+            House on February 6th, 2014, at 4 pm at the
+            <a href="http://www.berkeley.edu/map/googlemap/?blum">Plaza Level of Blum Hall.</a> <br/><br/>Refreshments
+            and new
+            grant opportunities will be served.
+        </p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image img-responsive img-thumbnail pull-left"
+             src="{{ STATIC_URL }}images/network.jpg">
+
+        <h2 class="featurette-heading">Network <br/>
+            <span class="text-secondary">With Researchers Interested in
+            Development Research and Practice</span></h2>
+
+        <p class="lead"><br/>Mingle with DIL staff, project partners, get involved in our community, and hear about
+            all
+            the new initiatives we have started to streamline innovation for development and catalyze poverty action
+            thinking on the Berkeley Campus!</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image img-thumbnail pull-right" src="{{ STATIC_URL }}images/tech.jpg">
+
+        <h2 class="featurette-heading">Connect <br/>
+            <span class="text-secondary">With Projects and Research Through the DIL Network</span></h2>
+
+        <p class="lead"><br/>Last year, with support from USAID, the Blum Center for Developing Economies founded
+            the
+            Development Impact Lab (DIL) in partnership with the Center for Effective Global Action (CEGA) in order
+            to
+            build a pipeline for novel technologies and approaches that aim to improve the lives of those who live
+            on
+            less than $2 a day.
+            <br/><br/> Forming a global nexus for UC Berkeley’s mission of teaching, research and public service,
+            DIL
+            promotes technology design in the service of the world’s poor and provides training to a new generation
+            of
+            globally engaged scientists, engineers, and other interdisciplinary development practitioners across the
+            university campus.
+
+        </p>
+    </div>
+
+    <hr class="featurette-divider"/>
+    <!-- Three columns of text below the carousel -->
+
+    <h2 class="sponsor-heading">Our Sponsors:</h2>
+    <br/><br/>
+    <div class="row">
+        <div class="col-xs-4 col-md-4">
+            <a href="#" class="thumbnail">
+                <img class="img-rectangle" src="{{ STATIC_URL }}images/cega_logo.png">
+            </a>
+        </div>
+
+
+        <div class="col-xs-4 col-md-4">
+            <a href="#" class="thumbnail">
+                <img class="img-rectangle" src="{{ STATIC_URL }}images/usaid_logo.jpeg">
+            </a>
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <a href="#" class="thumbnail">
+                <img class="img-rectangle" src="{{ STATIC_URL }}images/higher-ed-logo.png">
+            </a>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <a href="#" class="thumbnail">
+                        <img class="img-rectangle" src="{{ STATIC_URL }}images/blum-logo.png">
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-md-6">
+                    <a href="#" class="thumbnail">
+                        <img class="img-rectangle" src="{{ STATIC_URL }}images/primarylogo.png">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- /END THE FEATURETTES -->
+    <section>
+        <br/>
+        <hr/>
+        <div class="row">
+
+            <div class="col-sm-4 ">
+
+                <address>
+                    <strong>Blum Center for Developing Economies</strong><br>
+                    The University of California, Berkeley<br>
+                    Blum Hall #5570<br>
+                    Berkeley, CA 94720-5570<br/>
+                    P: (510) 643-5316
+                </address>
+
+                <address>
+                    <strong>Email Us</strong><br>
+                    <a href="mailto:dil@berkeley.edu"> dil [at] berkeley [dot] edu</a>
+                </address>
+            </div>
+
+            <div class="col-sm-8 pull-right">
+
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
+                               required="">
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="middleName" name="firstName"
+                               placeholder="Middle Name" required="">
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name"
+                               required="">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-6">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="email" class="form-control" name="phone" placeholder="Phone" required="">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <input type="homepage" class="form-control" placeholder="Website URL" required="">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <button class="btn btn-default pull-right">Contact Us</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--/row-->
+    </section><!-- /.row -->
+{% endblock base_content %}
+{% block footer %}
+
+    </div>
+{% endblock footer %}
+
+
+{% block footer_codes %}
+    <!-- JavaScript jQuery code from Bootply.com editor -->
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $('#navToggle').on('click', function () {
+                $('#toggle').toggle(700, 'linear');
+                event.stopPropagation();
+            });
+        });
+
+    </script>
+{% endblock footer_codes %}

@@ -1,0 +1,199 @@
+/*Color Variables*/
+
+$white: #ffffff;
+$gray: #e6e6e6;
+$black: rgb(1, 1, 1);
+$charcoal: rgba(0, 0, 0, 0.78);
+$darkpurple: #fdb790;
+$purple: #decdbc;
+$deeppurple: #ED1C24;
+$blue: #FEBFB5;
+$blue1: #5bdde0;
+$blue2: #598c68;
+
+/*SASS Mixins*/
+
+@mixin backgroundDark{
+  background-image: -ms-linear-gradient(top, $charcoal 0%, $black 100%);
+  background-image: -moz-linear-gradient(top, $charcoal 0%, $charcoal 100%);
+  background-image: -o-linear-gradient(top, $charcoal 0%, $black 100%);
+  background-image:
+  -webkit-gradient(linear, left top, left bottom, color-stop(0, $charcoal), color-stop(1, $black));
+  background-image: -webkit-linear-gradient(top, $charcoal 0%, $black 100%);
+  background-image: linear-gradient(to bottom, $charcoal 0%, $black 100%);
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+
+
+/*General CSS*/
+
+
+
+#toggle {
+  display: none;
+  float: left;
+  clear: right;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navToggle {
+  background-color: $charcoal;
+  position: absolute;
+  left: 20;
+  display: block;
+  color: $white;
+  padding: 11px;
+  height: 45px;
+  font: 13px "Quicksand";
+  z-index: 1000;
+
+
+  &:hover {
+   background-color: $deeppurple;
+   color: $white;
+   cursor: se-resize;
+  }
+}
+
+.nav {
+   float: right;
+   background-color: $charcoal;
+   width: 100%;
+   padding: 0px 0px 0px 0px;
+   border-right: 7px solid $deeppurple;
+   height: 45px;
+}
+
+#navBox {
+   width: 100%;
+   margin: 0px 0px 20px 0px;
+}
+
+h1 {
+   	font-family: 'Quicksand', sans-serif;
+	   font-weight: 100;
+   font-size: 4.8em;
+   margin: 20px 0px 0px 30px;
+}
+
+h2 {
+   	font-family: 'Quicksand', sans-serif;
+	   font-weight: 300;
+   font-size: 1.8em;
+   font-style: italic;
+   color: $charcoal;
+   margin: -2px 0px 0px 35px;
+}
+
+li {
+  float: left;
+  clear: right;
+  display: block;
+  color: $white;
+  height: 100%;
+  padding: 13px 14px 13px 14px;
+
+  &:hover {
+    float: left;
+    clear: right;
+    display: block;
+    background-color: $white;
+    color: $black;
+    border-bottom: 3px solid $deeppurple;
+    @include transition(background-color .10s .10s, color .10s);
+  }
+}
+
+li:first-child {
+  margin: 0px 0px 0px 35px;
+}
+
+a {
+  color: $gray;
+  	font-family: 'Quicksand', sans-serif;
+	  font-weight: 300;
+  font-size: .9em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#searchContainer {
+  float: right;
+  clear: both;
+  margin: -36px 30px 0px 0px;
+
+  &:hover {
+    outline: none;
+    border-color: $purple;
+    box-shadow: 0 0 5px $purple;
+  }
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+h1 {
+	   font-weight: 100;
+   font-size: 2.8em;
+}
+
+h2 {
+	   font-weight: 300;
+   font-size: 1.2em;
+   margin: 8px 0px 0px 30px;
+}
+
+.deeppurple {
+   color: $deeppurple;
+}
+
+#searchContainer {
+  display: none;
+}
+
+li {
+  float: left;
+  clear: right;
+  display: block;
+  color: $white;
+  height: 100%;
+  padding: 13px 10px 13px 10px;
+}
+
+}

@@ -1,0 +1,114 @@
+/*Color Variables*/
+/*SASS Mixins*/
+/*General CSS*/
+#toggle {
+  display: none;
+  float: left;
+  clear: right;
+  width: 100%;
+  z-index: 1000; }
+
+#navToggle {
+  background-color: rgba(0, 0, 0, 0.78);
+  position: absolute;
+  left: 20;
+  display: block;
+  color: white;
+  padding: 11px;
+  height: 45px;
+  font: 13px "Quicksand";
+  z-index: 1000; }
+  #navToggle:hover {
+    background-color: #ed1c24;
+    color: white;
+    cursor: se-resize; }
+
+.nav {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.78);
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  border-right: 7px solid #ed1c24;
+  height: 45px; }
+
+#navBox {
+  width: 100%;
+  margin: 0px 0px 20px 0px; }
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  font-size: 4.8em;
+  margin: 20px 0px 0px 30px; }
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.78);
+  margin: -2px 0px 0px 35px; }
+
+li {
+  float: left;
+  clear: right;
+  display: block;
+  color: white;
+  height: 100%;
+  padding: 13px 14px 13px 14px; }
+  li:hover {
+    float: left;
+    clear: right;
+    display: block;
+    background-color: white;
+    color: #010101;
+    border-bottom: 3px solid #ed1c24;
+    -moz-transition: background-color 0.1s 0.1s, color 0.1s;
+    -o-transition: background-color 0.1s 0.1s, color 0.1s;
+    -webkit-transition: background-color 0.1s 0.1s, color 0.1s;
+    transition: background-color 0.1s 0.1s, color 0.1s; }
+
+li:first-child {
+  margin: 0px 0px 0px 35px; }
+
+a {
+  color: #e6e6e6;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: .9em;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#searchContainer {
+  float: right;
+  clear: both;
+  margin: -36px 30px 0px 0px; }
+  #searchContainer:hover {
+    outline: none;
+    border-color: #decdbc;
+    box-shadow: 0 0 5px #decdbc; }
+
+/*Media Queries*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  h1 {
+    font-weight: 100;
+    font-size: 2.8em; }
+
+  h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 8px 0px 0px 30px; }
+
+  .deeppurple {
+    color: #ed1c24; }
+
+  #searchContainer {
+    display: none; }
+
+  li {
+    float: left;
+    clear: right;
+    display: block;
+    color: white;
+    height: 100%;
+    padding: 13px 10px 13px 10px; } }

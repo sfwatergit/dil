@@ -1,1 +1,1 @@
-web: gunicorn cms_dil.wsgi
+web: gunicorn --pythonpath cms_dil cms_dil.wsgi

@@ -32,7 +32,7 @@ DATABASES = {'default': dj_database_url.config()}
 #        'PORT': '5432',                      # Set to empty string for default.
 #    }
 #}
-SECRET_KEY = 'f#t_x7mi(^(obx*vn@srn)3+^*_-bgc)rsz6y=91w0hhgc%gbq'
+
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['*']

@@ -121,7 +121,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'cms_dil.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-#WSGI_APPLICATION = 'cms_dil.wsgi.application'
+WSGI_APPLICATION = 'cms_dil.wsgi.application'
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),

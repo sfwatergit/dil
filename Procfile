@@ -1,1 +1,1 @@
-web: gunicorn cms_dil.wsgi -b 0.0.0.0:$PORT
+web: python cms_dil/manage.py runserver 0.0.0.0:$PORT --noreload
